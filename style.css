@@ -118,6 +118,53 @@ td button:hover {
   transform: scale(1.08);
 }
 
+
+#authSection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-bottom: 18px;
+}
+
+#loginForm {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+#loginForm input {
+  padding: 8px 12px;
+  border: 1.5px solid #af4d56;
+  border-radius: 6px;
+  font-size: 1rem;
+  background: rgba(255,255,255,0.7);
+}
+
+#loginForm button, #authButtons button {
+  background: linear-gradient(90deg, #af4d56 60%, #7a0707 100%);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 18px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: 6px;
+  box-shadow: 0 2px 8px #af4d5644;
+  transition: background 0.2s, transform 0.2s;
+}
+
+#authButtons button:hover, #loginForm button:hover {
+  background: linear-gradient(90deg, #7a0707 60%, #af4d56 100%);
+  transform: scale(1.05);
+}
+
+#welcomeMsg {
+  color: #af4d56;
+  font-weight: 600;
+  margin-bottom: 8px;
+  margin-right: 10px;
+}
+
 @media (max-width: 600px) {
   .container {
     padding: 18px 8px;
