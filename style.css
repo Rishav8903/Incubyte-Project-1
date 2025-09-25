@@ -1,0 +1,134 @@
+body {
+  font-family: 'Segoe UI', 'Lucida Sans', 'Verdana', sans-serif;
+  background: linear-gradient(135deg, #7a0707 0%, #af4d56 100%);
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 8px 32px rgba(175, 77, 86, 0.25), 0 1.5px 8px rgba(0,0,0,0.08);
+  border-radius: 18px;
+  padding: 40px 36px;
+  width: 480px;
+  max-width: 95vw;
+  transition: box-shadow 0.3s;
+}
+
+.container:hover {
+  box-shadow: 0 12px 40px rgba(175, 77, 86, 0.35), 0 2px 12px rgba(0,0,0,0.12);
+}
+
+h1 {
+  color: #af4d56;
+  font-size: 2.4rem;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: 28px;
+  font-weight: 700;
+  text-shadow: 0 2px 8px #e8b4bc44;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 24px;
+  justify-content: center;
+}
+
+form input, form button {
+  padding: 12px 14px;
+  border: 1.5px solid #af4d56;
+  border-radius: 6px;
+  font-size: 1rem;
+  background: rgba(255,255,255,0.7);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+form input:focus {
+  border-color: #7a0707;
+  box-shadow: 0 0 0 2px #e8b4bc55;
+  outline: none;
+}
+
+form button {
+  background: linear-gradient(90deg, #af4d56 60%, #7a0707 100%);
+  color: white;
+  cursor: pointer;
+  border: none;
+  font-weight: 600;
+  box-shadow: 0 2px 8px #af4d5644;
+  transition: background 0.2s, transform 0.2s;
+}
+
+form button:hover {
+  background: linear-gradient(90deg, #7a0707 60%, #af4d56 100%);
+  transform: translateY(-2px) scale(1.05);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 18px;
+  background: rgba(255,255,255,0.8);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px #e8b4bc33;
+}
+
+th, td {
+  padding: 14px 10px;
+  border-bottom: 1px solid #e8b4bc;
+  text-align: center;
+  font-size: 1rem;
+}
+
+th {
+  color: #af4d56;
+  background: rgba(175,77,86,0.07);
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+td button {
+  background: linear-gradient(90deg, #af4d56 60%, #7a0707 100%);
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 0 4px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  box-shadow: 0 1px 6px #af4d5644;
+  transition: background 0.2s, transform 0.2s;
+}
+
+td button:hover {
+  background: linear-gradient(90deg, #7a0707 60%, #af4d56 100%);
+  transform: scale(1.08);
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 18px 8px;
+    width: 98vw;
+  }
+  form {
+    flex-direction: column;
+    gap: 10px;
+  }
+  th, td {
+    padding: 10px 4px;
+    font-size: 0.95rem;
+  }
+}

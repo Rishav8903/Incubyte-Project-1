@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AI Kata Sweet Shop Management</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Sweet Shop Inventory</h1>
+    <form id="sweetForm">
+      <input type="text" id="name" placeholder="Sweet Name" required />
+      <input type="text" id="category" placeholder="Category" required />
+      <input type="number" id="price" placeholder="Price" required min="0" />
+      <input type="number" id="quantity" placeholder="Quantity" required min="0" />
+      <button type="submit">Add Sweet</button>
+    </form>
+    <table id="sweetsTable">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Category</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
