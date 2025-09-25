@@ -7,6 +7,18 @@
 </head>
 <body>
   <div class="container">
+    <div id="authSection">
+    <form id="loginForm" style="display: none;">
+      <input type="text" id="username" placeholder="Username" required />
+      <input type="password" id="password" placeholder="Password" required />
+      <button type="submit">Login</button>
+    </form>
+    <div id="authButtons">
+      <button id="loginBtn">Login</button>
+      <button id="logoutBtn" style="display: none;">Logout</button>
+    </div>
+    <div id="welcomeMsg" style="display: none;"></div>
+  </div>
     <h1>Sweet Shop Inventory</h1>
     <form id="sweetForm">
       <input type="text" id="name" placeholder="Sweet Name" required />
@@ -31,3 +43,5 @@
   <script src="script.js"></script>
 </body>
 </html>
+
+
